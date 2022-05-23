@@ -1,4 +1,7 @@
 const form = document.querySelector(".top form");
+const input = document.querySelector(".top input");
+const msg = document.querySelector(".top .msg");
+const list = document.querySelector(".api .cities");
 const apiKey = "00fa8c3fd061d86c5772bedf4345a21b";
 
 form.addEventListener("submit", e => {
@@ -51,7 +54,7 @@ form.addEventListener("submit", e => {
       <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup>
       </div>
       <figure>
-        <img class="city-icon" src=${icon} alt=${weather[0]["main"]}>
+        <img class="city-icon" src="${icon}" alt="${weather[0]["main"]}">
         <figcaption>${weather[0]["description"]}</figcaption>
       </figure>
       `;
